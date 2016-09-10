@@ -1,0 +1,6 @@
+framework module Pods_MuttyChatTests {
+  umbrella header "Pods-MuttyChatTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

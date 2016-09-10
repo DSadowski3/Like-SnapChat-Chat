@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29C9EE1096A655802C4D4B17 /* Pods_MuttyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7578EC434E18284E564CDE9 /* Pods_MuttyChat.framework */; };
+		2F2DAC7E50F50632AA30E935 /* Pods_MuttyChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B1D80F74B070500BD3B9A /* Pods_MuttyChatTests.framework */; };
+		8764D04E1D839D1E0032A9F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */; };
 		8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD581D80FD980095FD7C /* AppDelegate.swift */; };
 		8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD5A1D80FD980095FD7C /* CameraVC.swift */; };
 		8775AD5E1D80FD980095FD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775AD5C1D80FD980095FD7C /* Main.storyboard */; };
@@ -16,6 +19,7 @@
 		8775AD791D80FD980095FD7C /* MuttyChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD781D80FD980095FD7C /* MuttyChatUITests.swift */; };
 		8775AD8E1D825A3A0095FD7C /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */; };
 		8775AD8F1D825A3A0095FD7C /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */; };
+		AA499AA7174D665FE0D9766C /* Pods_MuttyChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B8079F856744A5B4DC8EDC /* Pods_MuttyChatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137E7FC3F62BFBEA72CA73D2 /* Pods-MuttyChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatUITests/Pods-MuttyChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		223B1D80F74B070500BD3B9A /* Pods_MuttyChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuttyChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B8079F856744A5B4DC8EDC /* Pods_MuttyChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuttyChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36EB4083758C9159B7BFF0A5 /* Pods-MuttyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChat/Pods-MuttyChat.debug.xcconfig"; sourceTree = "<group>"; };
+		6E941168CCCADFD71C7E57AD /* Pods-MuttyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatTests/Pods-MuttyChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		731719A1EC2C66059C268AF6 /* Pods-MuttyChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatUITests/Pods-MuttyChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
+		8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8775AD551D80FD980095FD7C /* MuttyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuttyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8775AD581D80FD980095FD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8775AD5A1D80FD980095FD7C /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -55,6 +66,9 @@
 		8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
 		8775AD8C1D825A3A0095FD7C /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
 		8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
+		A7578EC434E18284E564CDE9 /* Pods_MuttyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuttyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EDB0223A484AC68594B496 /* Pods-MuttyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChat/Pods-MuttyChat.release.xcconfig"; sourceTree = "<group>"; };
+		D6B54F91B3E93186D596EDC2 /* Pods-MuttyChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatTests/Pods-MuttyChatTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29C9EE1096A655802C4D4B17 /* Pods_MuttyChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F2DAC7E50F50632AA30E935 /* Pods_MuttyChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA499AA7174D665FE0D9766C /* Pods_MuttyChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12DB29B7BB5CF1553A0A47E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7578EC434E18284E564CDE9 /* Pods_MuttyChat.framework */,
+				223B1D80F74B070500BD3B9A /* Pods_MuttyChatTests.framework */,
+				27B8079F856744A5B4DC8EDC /* Pods_MuttyChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7130DA5E9B3D81FA3CE35DD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36EB4083758C9159B7BFF0A5 /* Pods-MuttyChat.debug.xcconfig */,
+				D4EDB0223A484AC68594B496 /* Pods-MuttyChat.release.xcconfig */,
+				D6B54F91B3E93186D596EDC2 /* Pods-MuttyChatTests.debug.xcconfig */,
+				6E941168CCCADFD71C7E57AD /* Pods-MuttyChatTests.release.xcconfig */,
+				731719A1EC2C66059C268AF6 /* Pods-MuttyChatUITests.debug.xcconfig */,
+				137E7FC3F62BFBEA72CA73D2 /* Pods-MuttyChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8764D0491D8392770032A9F8 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +137,8 @@
 				8775AD6C1D80FD980095FD7C /* MuttyChatTests */,
 				8775AD771D80FD980095FD7C /* MuttyChatUITests */,
 				8775AD561D80FD980095FD7C /* Products */,
+				7130DA5E9B3D81FA3CE35DD7 /* Pods */,
+				12DB29B7BB5CF1553A0A47E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +165,7 @@
 				8775AD611D80FD980095FD7C /* LaunchScreen.storyboard */,
 				8775AD641D80FD980095FD7C /* Info.plist */,
 				8775AD891D825A390095FD7C /* MuttyChat-Bridging-Header.h */,
+				8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */,
 			);
 			path = MuttyChat;
 			sourceTree = "<group>";
@@ -178,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8775AD7D1D80FD980095FD7C /* Build configuration list for PBXNativeTarget "MuttyChat" */;
 			buildPhases = (
+				8373E35E6207BC343716C80F /* [CP] Check Pods Manifest.lock */,
 				8775AD511D80FD980095FD7C /* Sources */,
 				8775AD521D80FD980095FD7C /* Frameworks */,
 				8775AD531D80FD980095FD7C /* Resources */,
+				120B760D87801FEF70B3C124 /* [CP] Embed Pods Frameworks */,
+				117DAFB5C06012493A433EB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8775AD801D80FD980095FD7C /* Build configuration list for PBXNativeTarget "MuttyChatTests" */;
 			buildPhases = (
+				ED97C6C2F3F6175503A5A92D /* [CP] Check Pods Manifest.lock */,
 				8775AD651D80FD980095FD7C /* Sources */,
 				8775AD661D80FD980095FD7C /* Frameworks */,
 				8775AD671D80FD980095FD7C /* Resources */,
+				F3F64DB40329652C3E026CA1 /* [CP] Embed Pods Frameworks */,
+				D14C3B1EB61FD896F8D62735 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,9 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8775AD831D80FD980095FD7C /* Build configuration list for PBXNativeTarget "MuttyChatUITests" */;
 			buildPhases = (
+				DE3291F129139206037318D0 /* [CP] Check Pods Manifest.lock */,
 				8775AD701D80FD980095FD7C /* Sources */,
 				8775AD711D80FD980095FD7C /* Frameworks */,
 				8775AD721D80FD980095FD7C /* Resources */,
+				E02D29CBEFC4D74A0E56D153 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8775AD631D80FD980095FD7C /* LaunchScreen.storyboard in Resources */,
+				8764D04E1D839D1E0032A9F8 /* GoogleService-Info.plist in Resources */,
 				8775AD601D80FD980095FD7C /* Assets.xcassets in Resources */,
 				8775AD5E1D80FD980095FD7C /* Main.storyboard in Resources */,
 			);
@@ -303,6 +355,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		117DAFB5C06012493A433EB4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuttyChat/Pods-MuttyChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		120B760D87801FEF70B3C124 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuttyChat/Pods-MuttyChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8373E35E6207BC343716C80F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D14C3B1EB61FD896F8D62735 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuttyChatTests/Pods-MuttyChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3291F129139206037318D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E02D29CBEFC4D74A0E56D153 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuttyChatUITests/Pods-MuttyChatUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED97C6C2F3F6175503A5A92D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3F64DB40329652C3E026CA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuttyChatTests/Pods-MuttyChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8775AD511D80FD980095FD7C /* Sources */ = {
@@ -462,6 +637,7 @@
 		};
 		8775AD7E1D80FD980095FD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36EB4083758C9159B7BFF0A5 /* Pods-MuttyChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -478,6 +654,7 @@
 		};
 		8775AD7F1D80FD980095FD7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EDB0223A484AC68594B496 /* Pods-MuttyChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -493,6 +670,7 @@
 		};
 		8775AD811D80FD980095FD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B54F91B3E93186D596EDC2 /* Pods-MuttyChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +686,7 @@
 		};
 		8775AD821D80FD980095FD7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E941168CCCADFD71C7E57AD /* Pods-MuttyChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +702,7 @@
 		};
 		8775AD841D80FD980095FD7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 731719A1EC2C66059C268AF6 /* Pods-MuttyChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S2TC7J64A5;
@@ -537,6 +717,7 @@
 		};
 		8775AD851D80FD980095FD7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 137E7FC3F62BFBEA72CA73D2 /* Pods-MuttyChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S2TC7J64A5;
