@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD581D80FD980095FD7C /* AppDelegate.swift */; };
-		8775AD5B1D80FD980095FD7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD5A1D80FD980095FD7C /* ViewController.swift */; };
+		8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD5A1D80FD980095FD7C /* CameraVC.swift */; };
 		8775AD5E1D80FD980095FD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775AD5C1D80FD980095FD7C /* Main.storyboard */; };
 		8775AD601D80FD980095FD7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8775AD5F1D80FD980095FD7C /* Assets.xcassets */; };
 		8775AD631D80FD980095FD7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775AD611D80FD980095FD7C /* LaunchScreen.storyboard */; };
 		8775AD6E1D80FD980095FD7C /* MuttyChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD6D1D80FD980095FD7C /* MuttyChatTests.swift */; };
 		8775AD791D80FD980095FD7C /* MuttyChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD781D80FD980095FD7C /* MuttyChatUITests.swift */; };
+		8775AD8E1D825A3A0095FD7C /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */; };
+		8775AD8F1D825A3A0095FD7C /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		8775AD551D80FD980095FD7C /* MuttyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuttyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8775AD581D80FD980095FD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8775AD5A1D80FD980095FD7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8775AD5A1D80FD980095FD7C /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		8775AD5D1D80FD980095FD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8775AD5F1D80FD980095FD7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8775AD621D80FD980095FD7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		8775AD741D80FD980095FD7C /* MuttyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuttyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8775AD781D80FD980095FD7C /* MuttyChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuttyChatUITests.swift; sourceTree = "<group>"; };
 		8775AD7A1D80FD980095FD7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8775AD891D825A390095FD7C /* MuttyChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuttyChat-Bridging-Header.h"; sourceTree = "<group>"; };
+		8775AD8A1D825A3A0095FD7C /* AAPLPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLPreviewView.h; sourceTree = "<group>"; };
+		8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLPreviewView.m; sourceTree = "<group>"; };
+		8775AD8C1D825A3A0095FD7C /* AAPLCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraViewController.h; sourceTree = "<group>"; };
+		8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8764D0491D8392770032A9F8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		8775AD4C1D80FD980095FD7C = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +113,16 @@
 		8775AD571D80FD980095FD7C /* MuttyChat */ = {
 			isa = PBXGroup;
 			children = (
+				8775AD881D80FDCC0095FD7C /* Model */,
+				8775AD871D80FDC70095FD7C /* View */,
+				8775AD861D80FDBE0095FD7C /* Controller */,
+				8764D0491D8392770032A9F8 /* Protocols */,
 				8775AD581D80FD980095FD7C /* AppDelegate.swift */,
-				8775AD5A1D80FD980095FD7C /* ViewController.swift */,
 				8775AD5C1D80FD980095FD7C /* Main.storyboard */,
 				8775AD5F1D80FD980095FD7C /* Assets.xcassets */,
 				8775AD611D80FD980095FD7C /* LaunchScreen.storyboard */,
 				8775AD641D80FD980095FD7C /* Info.plist */,
+				8775AD891D825A390095FD7C /* MuttyChat-Bridging-Header.h */,
 			);
 			path = MuttyChat;
 			sourceTree = "<group>";
@@ -123,6 +143,32 @@
 				8775AD7A1D80FD980095FD7C /* Info.plist */,
 			);
 			path = MuttyChatUITests;
+			sourceTree = "<group>";
+		};
+		8775AD861D80FDBE0095FD7C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8775AD8C1D825A3A0095FD7C /* AAPLCameraViewController.h */,
+				8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */,
+				8775AD5A1D80FD980095FD7C /* CameraVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8775AD871D80FDC70095FD7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8775AD8A1D825A3A0095FD7C /* AAPLPreviewView.h */,
+				8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8775AD881D80FDCC0095FD7C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +240,7 @@
 					8775AD541D80FD980095FD7C = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = S2TC7J64A5;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					8775AD681D80FD980095FD7C = {
@@ -262,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8775AD5B1D80FD980095FD7C /* ViewController.swift in Sources */,
+				8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */,
 				8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */,
+				8775AD8E1D825A3A0095FD7C /* AAPLPreviewView.m in Sources */,
+				8775AD8F1D825A3A0095FD7C /* AAPLCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +464,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = S2TC7J64A5;
 				INFOPLIST_FILE = MuttyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AOJI.MuttyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuttyChat/MuttyChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -428,11 +480,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = S2TC7J64A5;
 				INFOPLIST_FILE = MuttyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AOJI.MuttyChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuttyChat/MuttyChat-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +568,7 @@
 				8775AD7F1D80FD980095FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8775AD801D80FD980095FD7C /* Build configuration list for PBXNativeTarget "MuttyChatTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +577,7 @@
 				8775AD821D80FD980095FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8775AD831D80FD980095FD7C /* Build configuration list for PBXNativeTarget "MuttyChatUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +586,7 @@
 				8775AD851D80FD980095FD7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
