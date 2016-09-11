@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		29C9EE1096A655802C4D4B17 /* Pods_MuttyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7578EC434E18284E564CDE9 /* Pods_MuttyChat.framework */; };
 		2F2DAC7E50F50632AA30E935 /* Pods_MuttyChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B1D80F74B070500BD3B9A /* Pods_MuttyChatTests.framework */; };
+		870F7F091D85DD2B003DCBB0 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */; };
+		870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */; };
 		8764D04E1D839D1E0032A9F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */; };
 		8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD581D80FD980095FD7C /* AppDelegate.swift */; };
 		8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD5A1D80FD980095FD7C /* CameraVC.swift */; };
@@ -46,6 +48,8 @@
 		36EB4083758C9159B7BFF0A5 /* Pods-MuttyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChat/Pods-MuttyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		6E941168CCCADFD71C7E57AD /* Pods-MuttyChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatTests/Pods-MuttyChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		731719A1EC2C66059C268AF6 /* Pods-MuttyChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatUITests/Pods-MuttyChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
+		870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8775AD551D80FD980095FD7C /* MuttyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuttyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,8 @@
 			children = (
 				8775AD8A1D825A3A0095FD7C /* AAPLPreviewView.h */,
 				8775AD8B1D825A3A0095FD7C /* AAPLPreviewView.m */,
+				870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */,
+				870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -485,7 +491,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */,
+				870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */,
 				8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */,
+				870F7F091D85DD2B003DCBB0 /* RoundTextField.swift in Sources */,
 				8775AD8E1D825A3A0095FD7C /* AAPLPreviewView.m in Sources */,
 				8775AD8F1D825A3A0095FD7C /* AAPLCameraViewController.m in Sources */,
 			);

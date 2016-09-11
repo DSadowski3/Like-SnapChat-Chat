@@ -64,9 +64,147 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="KGx-3j-bXm">
+            <objects>
+                <viewController id="ZqR-Y7-izW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zre-4t-ycw"/>
+                        <viewControllerLayoutGuide type="bottom" id="yri-8h-PZs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lw7-1A-K1B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes" translatesAutoresizingMaskIntoConstraints="NO" id="UuC-xM-KfQ"/>
+                            <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FY3-j7-IKJ">
+                                <color key="backgroundColor" red="0.39659617050000001" green="1" blue="0.28825813709999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bVF-5f-YcL">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CTM-tl-jX6">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-mountains-white" translatesAutoresizingMaskIntoConstraints="NO" id="Mah-4b-SOW">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="67" id="eMz-FE-tYi"/>
+                                                    <constraint firstAttribute="width" constant="95" id="or9-uD-dJW"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MuttyChat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-6z-52U">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="FrT-Rb-fNS"/>
+                                                    <constraint firstAttribute="width" constant="176" id="crB-Os-PH2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="281" id="VPm-58-wnF"/>
+                                    <constraint firstAttribute="height" constant="67" id="oZF-CS-mio"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter email " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A8Z-Ck-PQ8" customClass="RoundTextField" customModule="MuttyChat" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="Ihe-6y-iTZ"/>
+                                    <constraint firstAttribute="height" constant="30" id="J57-92-OTw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nao-KY-4JQ" customClass="RoundTextField" customModule="MuttyChat" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="qcd-PT-o1s"/>
+                                    <constraint firstAttribute="width" constant="265" id="xck-xb-nJa"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBK-nR-1DN" customClass="RoundedButton" customModule="MuttyChat" customModuleProvider="target">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="avC-IC-A84"/>
+                                    <constraint firstAttribute="height" constant="42" id="v93-Nd-WeT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="LogIn">
+                                    <color key="titleColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bVF-5f-YcL" firstAttribute="centerX" secondItem="Lw7-1A-K1B" secondAttribute="centerX" id="1ok-N6-6S1"/>
+                            <constraint firstAttribute="trailing" secondItem="FY3-j7-IKJ" secondAttribute="trailing" id="4CJ-ag-ud1"/>
+                            <constraint firstAttribute="trailing" secondItem="UuC-xM-KfQ" secondAttribute="trailing" id="AAa-VB-1x7"/>
+                            <constraint firstItem="A8Z-Ck-PQ8" firstAttribute="centerX" secondItem="Lw7-1A-K1B" secondAttribute="centerX" id="HQM-yo-VOH"/>
+                            <constraint firstItem="FY3-j7-IKJ" firstAttribute="leading" secondItem="Lw7-1A-K1B" secondAttribute="leading" id="IQY-kr-ZLH"/>
+                            <constraint firstItem="yri-8h-PZs" firstAttribute="top" secondItem="UuC-xM-KfQ" secondAttribute="bottom" id="Kzv-Is-ee8"/>
+                            <constraint firstItem="bVF-5f-YcL" firstAttribute="top" secondItem="Zre-4t-ycw" secondAttribute="bottom" constant="100" id="MId-LQ-003"/>
+                            <constraint firstItem="UuC-xM-KfQ" firstAttribute="top" secondItem="Lw7-1A-K1B" secondAttribute="top" id="Qht-BI-fqt"/>
+                            <constraint firstItem="XBK-nR-1DN" firstAttribute="top" secondItem="Nao-KY-4JQ" secondAttribute="bottom" constant="20" id="Rxm-K9-edy"/>
+                            <constraint firstItem="XBK-nR-1DN" firstAttribute="centerX" secondItem="Lw7-1A-K1B" secondAttribute="centerX" id="T87-Rr-hiJ"/>
+                            <constraint firstItem="yri-8h-PZs" firstAttribute="top" secondItem="FY3-j7-IKJ" secondAttribute="bottom" id="Vhu-cV-jDp"/>
+                            <constraint firstItem="UuC-xM-KfQ" firstAttribute="leading" secondItem="Lw7-1A-K1B" secondAttribute="leading" id="akc-p2-JgZ"/>
+                            <constraint firstItem="Nao-KY-4JQ" firstAttribute="centerX" secondItem="Lw7-1A-K1B" secondAttribute="centerX" id="eGM-Wx-9un"/>
+                            <constraint firstItem="A8Z-Ck-PQ8" firstAttribute="top" secondItem="bVF-5f-YcL" secondAttribute="bottom" constant="55" id="iu6-CT-vkt"/>
+                            <constraint firstItem="FY3-j7-IKJ" firstAttribute="top" secondItem="Lw7-1A-K1B" secondAttribute="top" id="mtL-iR-TNu"/>
+                            <constraint firstItem="Nao-KY-4JQ" firstAttribute="top" secondItem="A8Z-Ck-PQ8" secondAttribute="bottom" constant="20" id="tWT-Aa-qC2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BzI-F1-veg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="38.23088455772114"/>
+        </scene>
     </scenes>
     <resources>
         <image name="camera_icon_snap" width="29" height="24"/>
         <image name="createsnap_btn" width="30" height="30"/>
+        <image name="devslopes" width="1080" height="1349"/>
+        <image name="devslopes-mountains-white" width="451" height="335"/>
     </resources>
 </document>
