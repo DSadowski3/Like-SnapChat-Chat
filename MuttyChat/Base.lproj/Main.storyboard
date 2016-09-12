@@ -58,16 +58,17 @@
                         <outlet property="cameraBtn" destination="Xea-a0-Czk" id="6Ty-db-0mF"/>
                         <outlet property="previewView" destination="6bF-Tm-0w2" id="Gln-K8-KYQ"/>
                         <outlet property="recordBtn" destination="hMF-D4-Wv4" id="97w-m2-dc4"/>
+                        <segue destination="ZqR-Y7-izW" kind="presentation" identifier="loginVC" id="KGg-fS-6NM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="KGx-3j-bXm">
             <objects>
-                <viewController id="ZqR-Y7-izW" sceneMemberID="viewController">
+                <viewController id="ZqR-Y7-izW" customClass="LoginVC" customModule="MuttyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Zre-4t-ycw"/>
                         <viewControllerLayoutGuide type="bottom" id="yri-8h-PZs"/>
@@ -123,7 +124,7 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.39659617050000001" green="1" blue="0.28825813709999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -146,7 +147,7 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.39659617050000001" green="1" blue="0.28825813709999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                         <real key="value" value="2"/>
@@ -160,7 +161,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="LogIn">
-                                    <color key="titleColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.39659617050000001" green="1" blue="0.28825813709999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -173,6 +174,9 @@
                                         <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="ZqR-Y7-izW" eventType="touchUpInside" id="mUq-24-2G2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,6 +199,10 @@
                             <constraint firstItem="Nao-KY-4JQ" firstAttribute="top" secondItem="A8Z-Ck-PQ8" secondAttribute="bottom" constant="20" id="tWT-Aa-qC2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="A8Z-Ck-PQ8" id="g8A-b0-O4J"/>
+                        <outlet property="passwordField" destination="Nao-KY-4JQ" id="AA2-8u-RYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BzI-F1-veg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

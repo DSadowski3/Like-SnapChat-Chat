@@ -12,6 +12,8 @@
 		870F7F091D85DD2B003DCBB0 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */; };
 		870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */; };
 		8764D04E1D839D1E0032A9F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */; };
+		8772C5361D863A0100B46D8D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772C5351D863A0100B46D8D /* LoginVC.swift */; };
+		8772C5391D863CD100B46D8D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772C5381D863CD100B46D8D /* AuthService.swift */; };
 		8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD581D80FD980095FD7C /* AppDelegate.swift */; };
 		8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8775AD5A1D80FD980095FD7C /* CameraVC.swift */; };
 		8775AD5E1D80FD980095FD7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8775AD5C1D80FD980095FD7C /* Main.storyboard */; };
@@ -52,6 +54,8 @@
 		870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8772C5351D863A0100B46D8D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8772C5381D863CD100B46D8D /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8775AD551D80FD980095FD7C /* MuttyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuttyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8775AD581D80FD980095FD7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8775AD5A1D80FD980095FD7C /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
@@ -134,6 +138,14 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		8772C5371D863CBE00B46D8D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8772C5381D863CD100B46D8D /* AuthService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		8775AD4C1D80FD980095FD7C = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 		8775AD571D80FD980095FD7C /* MuttyChat */ = {
 			isa = PBXGroup;
 			children = (
+				8772C5371D863CBE00B46D8D /* Services */,
 				8775AD881D80FDCC0095FD7C /* Model */,
 				8775AD871D80FDC70095FD7C /* View */,
 				8775AD861D80FDBE0095FD7C /* Controller */,
@@ -198,6 +211,7 @@
 				8775AD8C1D825A3A0095FD7C /* AAPLCameraViewController.h */,
 				8775AD8D1D825A3A0095FD7C /* AAPLCameraViewController.m */,
 				8775AD5A1D80FD980095FD7C /* CameraVC.swift */,
+				8772C5351D863A0100B46D8D /* LoginVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -492,10 +506,12 @@
 			files = (
 				8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */,
 				870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */,
+				8772C5361D863A0100B46D8D /* LoginVC.swift in Sources */,
 				8775AD591D80FD980095FD7C /* AppDelegate.swift in Sources */,
 				870F7F091D85DD2B003DCBB0 /* RoundTextField.swift in Sources */,
 				8775AD8E1D825A3A0095FD7C /* AAPLPreviewView.m in Sources */,
 				8775AD8F1D825A3A0095FD7C /* AAPLCameraViewController.m in Sources */,
+				8772C5391D863CD100B46D8D /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
