@@ -11,6 +11,7 @@
 		2F2DAC7E50F50632AA30E935 /* Pods_MuttyChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 223B1D80F74B070500BD3B9A /* Pods_MuttyChatTests.framework */; };
 		870F7F091D85DD2B003DCBB0 /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */; };
 		870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */; };
+		8722E33F1D879E6A007C6A9D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8722E33E1D879E6A007C6A9D /* DataService.swift */; };
 		8764D04E1D839D1E0032A9F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */; };
 		8772C5361D863A0100B46D8D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772C5351D863A0100B46D8D /* LoginVC.swift */; };
 		8772C5391D863CD100B46D8D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8772C5381D863CD100B46D8D /* AuthService.swift */; };
@@ -52,6 +53,7 @@
 		731719A1EC2C66059C268AF6 /* Pods-MuttyChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuttyChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuttyChatUITests/Pods-MuttyChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		870F7F081D85DD2B003DCBB0 /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundTextField.swift; sourceTree = "<group>"; };
 		870F7F0A1D85E384003DCBB0 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		8722E33E1D879E6A007C6A9D /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8764D04C1D83939F0032A9F8 /* AAPLCameraVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAPLCameraVCDelegate.h; sourceTree = "<group>"; };
 		8764D04D1D839D1E0032A9F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8772C5351D863A0100B46D8D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				8772C5381D863CD100B46D8D /* AuthService.swift */,
+				8722E33E1D879E6A007C6A9D /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -504,6 +507,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8722E33F1D879E6A007C6A9D /* DataService.swift in Sources */,
 				8775AD5B1D80FD980095FD7C /* CameraVC.swift in Sources */,
 				870F7F0B1D85E384003DCBB0 /* RoundedButton.swift in Sources */,
 				8772C5361D863A0100B46D8D /* LoginVC.swift in Sources */,

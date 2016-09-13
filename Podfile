@@ -9,6 +9,7 @@ target 'MuttyChat' do
 	pod ‘Firebase’
 	pod 'Firebase/Storage'
 	pod ‘Firebase/Auth’
+    pod 'Firebase/Database'
 
   target 'MuttyChatTests' do
     inherit! :search_paths
