@@ -274,7 +274,6 @@
                         <constraints>
                             <constraint firstItem="3k8-dY-zyA" firstAttribute="top" secondItem="ubS-9M-6mQ" secondAttribute="bottom" id="02v-eV-GQK"/>
                             <constraint firstItem="G3v-Gr-gVZ" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="4zC-zn-1xA"/>
-                            <constraint firstItem="ubS-9M-6mQ" firstAttribute="top" secondItem="0Wt-Mx-3s7" secondAttribute="top" id="6Ip-Dh-jXg"/>
                             <constraint firstItem="3k8-dY-zyA" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="8Cw-24-xXd"/>
                             <constraint firstItem="3k8-dY-zyA" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="91Y-8X-yvI"/>
                             <constraint firstItem="G3v-Gr-gVZ" firstAttribute="top" secondItem="0Wt-Mx-3s7" secondAttribute="top" constant="20" id="Dkt-ks-zSh"/>
