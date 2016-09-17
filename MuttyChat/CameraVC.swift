@@ -54,6 +54,33 @@ class CameraVC: AAPLCameraViewController, AAPLCameraVCDelegate {
     func canStartRecording() {
         print("Can start recording")
     }
+    
+    func videoRecordingFaild() {
+        
+    }
+    
+    func videoRecordingComplete(_ videoURL: URL!) {
+        performSegue(withIdentifier: "UsersVC", sender: ["videoURL":videoURL])
+    }
+    
+    func snapshotFaild() {
+        
+    }
+    func snapshotTaken(_ sanapshotData: Data!) {
+        performSegue(withIdentifier: "UsersVC", sender: ["snapshotData":sanapshotData])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let usersVC = segue.destination as? UsersVC {
+            if let videoDict = sender as? Dictionary<String, URL> {
+                let url = videoDict["videoURL"]
+                usersVC.videoURL = url
+            } else if let snapDict = sender as? Dictionary<String, Data> {
+                let snapData = snapDict["snapshotData"]
+                usersVC.snapData = snapData
+            }
+        }
+    }
 
 }
 

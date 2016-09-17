@@ -15,6 +15,10 @@
 -(void)shoudlEnableCameraUI:(BOOL)enable;
 -(void)canStartRecording;
 -(void)recordingHasStarted;
+-(void)videoRecordingComplete:(NSURL*)videoURL;
+-(void)videoRecordingFaild;
+-(void)snapshotTaken:(NSData*)sanapshotData;
+-(void)snapshotFaild;
 @end
 
 #endif /* Header_h */

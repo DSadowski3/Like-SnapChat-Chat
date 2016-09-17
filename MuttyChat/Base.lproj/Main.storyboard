@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tEe-RN-jP3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -59,6 +59,7 @@
                         <outlet property="previewView" destination="6bF-Tm-0w2" id="Gln-K8-KYQ"/>
                         <outlet property="recordBtn" destination="hMF-D4-Wv4" id="97w-m2-dc4"/>
                         <segue destination="ZqR-Y7-izW" kind="presentation" identifier="loginVC" id="KGg-fS-6NM"/>
+                        <segue destination="tEe-RN-jP3" kind="show" identifier="UsersVC" id="hIg-Hv-fnx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -227,7 +228,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ljn-fq-nMX" id="HLM-e0-Gw4">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Von Dyke" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp9-7h-ukA">
@@ -251,21 +252,44 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G3v-Gr-gVZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9D8-Gk-6C7"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Send a Pull request" id="wnr-ax-KrE">
+                                        <barButtonItem key="rightBarButtonItem" image="send_snap" id="3OW-9v-f8c">
+                                            <connections>
+                                                <action selector="sendPRBtnPressedWithSender:" destination="tEe-RN-jP3" id="0Za-au-zB0"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ubS-9M-6mQ">
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="3k8-dY-zyA" firstAttribute="top" secondItem="ubS-9M-6mQ" secondAttribute="bottom" id="02v-eV-GQK"/>
+                            <constraint firstItem="G3v-Gr-gVZ" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="4zC-zn-1xA"/>
                             <constraint firstItem="ubS-9M-6mQ" firstAttribute="top" secondItem="0Wt-Mx-3s7" secondAttribute="top" id="6Ip-Dh-jXg"/>
                             <constraint firstItem="3k8-dY-zyA" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="8Cw-24-xXd"/>
+                            <constraint firstItem="3k8-dY-zyA" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="91Y-8X-yvI"/>
+                            <constraint firstItem="G3v-Gr-gVZ" firstAttribute="top" secondItem="0Wt-Mx-3s7" secondAttribute="top" constant="20" id="Dkt-ks-zSh"/>
                             <constraint firstItem="ubS-9M-6mQ" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="Ie1-fU-QuJ"/>
+                            <constraint firstAttribute="trailing" secondItem="G3v-Gr-gVZ" secondAttribute="trailing" id="VOb-tf-Ox0"/>
                             <constraint firstItem="3k8-dY-zyA" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="VW9-fu-qrW"/>
                             <constraint firstItem="e2N-IY-0v4" firstAttribute="top" secondItem="3k8-dY-zyA" secondAttribute="bottom" id="X7n-cd-5hb"/>
                             <constraint firstAttribute="trailing" secondItem="ubS-9M-6mQ" secondAttribute="trailing" id="XNi-OS-iKm"/>
+                            <constraint firstAttribute="trailing" secondItem="3k8-dY-zyA" secondAttribute="trailing" id="eFF-66-PSz"/>
                             <constraint firstAttribute="trailing" secondItem="3k8-dY-zyA" secondAttribute="trailing" id="fer-dx-tsL"/>
                             <constraint firstItem="e2N-IY-0v4" firstAttribute="top" secondItem="3k8-dY-zyA" secondAttribute="bottom" id="jeq-vi-9az"/>
-                            <constraint firstItem="3k8-dY-zyA" firstAttribute="top" secondItem="ubS-9M-6mQ" secondAttribute="bottom" id="sOt-gB-nrI"/>
+                            <constraint firstItem="e2N-IY-0v4" firstAttribute="top" secondItem="3k8-dY-zyA" secondAttribute="bottom" id="ksZ-gi-rdh"/>
+                            <constraint firstItem="ubS-9M-6mQ" firstAttribute="leading" secondItem="0Wt-Mx-3s7" secondAttribute="leading" id="vgs-JU-LeK"/>
+                            <constraint firstItem="ubS-9M-6mQ" firstAttribute="top" secondItem="G3v-Gr-gVZ" secondAttribute="bottom" id="yMe-N2-iaK"/>
+                            <constraint firstAttribute="trailing" secondItem="ubS-9M-6mQ" secondAttribute="trailing" id="zj7-NE-kYQ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -274,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Af-EH-Xkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.5999999999999" y="80.50974512743629"/>
+            <point key="canvasLocation" x="750" y="-691"/>
         </scene>
     </scenes>
     <resources>
@@ -282,5 +306,6 @@
         <image name="createsnap_btn" width="30" height="30"/>
         <image name="devslopes" width="1080" height="1349"/>
         <image name="devslopes-mountains-white" width="451" height="335"/>
+        <image name="send_snap" width="24" height="23"/>
     </resources>
 </document>
